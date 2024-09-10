@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="spotify-logo">
+                <img src="pics/pics/spotify.png" alt="Spotify Logo">
+            </div>
+            
+            <h2>Your Library</h2>
+            <input type="text" placeholder="Search" class="search-bar">
+            <div class="playlists">
+                <h3>Playlists</h3>
+                <ul>
+                    <li>Romantic mix</li>
+                    <li>Pop mix</li>
+                    <li>Heavy rock</li>
+                    <li>Gym Playlist</li>
+                    <li>Party time</li>
+                    <li>Get me some beer</li>
+                    <li>Bad bitch era</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="top-bar">
+                <input type="text" placeholder="What do you want to play?" class="search-bar-main">
+            </div>
+
+            <!-- Playlists at the top -->
+            <div class="top-playlists">
+                <div class="playlist">
+                    <img src="pics/playlists/p1.jpeg" alt="Playlist Image">
+                    <p>double decker bus</p>
+                </div>
+                <div class="playlist">
+                    <img src="pics/playlists/p2.jpeg" alt="Playlist Image">
+                    <p>dear me</p>
+                </div>
+                <div class="playlist">
+                    <img src="pics/playlists/p3.jpeg" alt="Playlist Image">
+                    <p>Just chilling</p>
+                </div>
+                <div class="playlist">
+                    <img src="pics/playlists/p4.jpeg" alt="Playlist Image">
+                    <p>rock'n'roll</p>
+                </div>
+                <div class="playlist">
+                    <img src="pics/playlists/p5.jpeg" alt="Playlist Image">
+                    <p>reading romance</p>
+                </div>
+            </div>
+            
+            <!-- Playlist section -->
+            <div class="playlist-section">
+                <h2>Made For <span id="username">Gojo</span></h2>
+                <div class="daily-mixes">
+                    <div class="mix-item">
+                        <img src="pics/dm/dm1.jpeg" alt="Daily Mix 1">
+                        <p>Daily Mix 1</p>
+                    </div>
+                    <div class="mix-item">
+                        <img src="pics/dm/dm2.png" alt="Daily Mix 2">
+                        <p>Daily Mix 2</p>
+                    </div>
+                    <div class="mix-item">
+                        <img src="pics/dm/dm3.jpeg" alt="Daily Mix 3">
+                        <p>Daily Mix 3</p>
+                    </div>
+                    <div class="mix-item">
+                        <img src="pics/dm/dm4.png" alt="Daily Mix 4">
+                        <p>Daily Mix 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Friend Activity -->
+        <div class="friend-activity">
+            <h2>Friend Activity</h2>
+            <ul>
+                <li>
+                    <div class="friend-info">
+                        <img src="pics/friends/f1.png" alt="Friend Profile" class="friend-pic">
+                        <div class="friend-details">
+                            <span class="friend-name">Listener 1</span>
+                            <span class="song-title">Kaise Ab Kahein</span>
+                            <span class="artist-name">Gaurav Chatterji</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend-info">
+                        <img src="pics/friends/f2.jpeg" alt="Friend Profile" class="friend-pic">
+                        <div class="friend-details">
+                            <span class="friend-name">Listener 2</span>
+                            <span class="song-title">Matinalii Helalarenu</span>
+                            <span class="artist-name">Sonu Nigam</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="friend-info">
+                        <img src="pics/friends/f3.jpeg" alt="Friend Profile" class="friend-pic">
+                        <div class="friend-details">
+                            <span class="friend-name">Listener 3</span>
+                            <span class="song-title">Purple Teeth</span>
+                            <span class="artist-name">The Bravery</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Music Player -->
+        <div class="music-player">
+            <div class="now-playing">
+                <img src="pics/pics/weeknd.jpeg" alt="Now Playing">
+                <p>Die For You - The Weeknd</p>
+            </div>
+            <div class="controls">
+                <button class="control-btn prev-btn">⏮</button>
+                <button class="control-btn play-btn">▶</button>
+                <button class="control-btn next-btn">⏭</button>
+            </div>
+            <div class="progress-bar">
+                <span>0:00</span>
+                <div class="bar">
+                    <div class="progress"></div>
+                </div>
+                <span>4:20</span>
+            </div>
+            <audio id="audio" src="song/Die for you.mp3"></audio>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
